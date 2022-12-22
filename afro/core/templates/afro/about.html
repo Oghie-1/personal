@@ -1,0 +1,52 @@
+{% extends 'afro/index.html' %}
+{% load static %}
+<title>{% block title %}Afro|About{% endblock %}</title>
+<main>
+    {% block content%}
+    <div class="body">
+        <div class="first row bg-dark text-info">
+            <div class="bodY-header">
+                <h1 class="text" style="padding: 10px;">About</h1>
+            </div>
+            <hr>
+        </div>
+
+    </div>
+    <br>
+    <div class="container-fluid text-justify">
+        <div class="row text-dark">
+            <div>
+                <h2>Hy</h2>
+                <p>
+                    I'm an enthusiastic and versatile entry-level cloud engineer with a passion 
+                    for Google Cloud Platform, Python, writing, and product management. With a strong
+                    technical foundation and a knack for communication and organization, I'm ready to
+                    take on any challenge and help your team succeed in the cloud.
+                </p>
+                <p>
+                    Whether you need help with technical implementation, documentation, or product strategy, I'm here to 
+                    help. Let's work together and make your vision a reality. <strong><a href="{% url 'contact' %}">Contact me now</a></strong>
+                    to learn more about how I can help you succeed in the cloud. I am a curious developer who is working his way through the python programming language and I strongly
+                    believe technology can bridge the gap when everything else fails.
+
+                </p>
+                <p>In addition to my technical skills, I'm a proactive and detail-oriented problem-solver who is always looking for ways to improve processes
+                    and deliver better results. I have a strong work ethic and a commitment to continuous learning, which
+                    means I'm always looking for new opportunities to grow and develop my skills. If you're looking for a dedicated and
+                    talented entry-level engineer to join your team, I would love to hear from you. <strong>Reach Out</strong>
+                
+                </p>
+
+                <p>Also stay up-to-date on my latest projects and get exclusive access to behind-the-scenes content and insights.
+                    Sign up for my newsletter now and be the first to know about new additions to my portfolio.<strong> Do That Below</strong>
+                </p>
+                 
+
+            </div>
+            
+        </div>
+
+    </div>
+    
+    {% endblock %}
+</main>

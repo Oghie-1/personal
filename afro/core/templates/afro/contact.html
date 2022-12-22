@@ -1,0 +1,56 @@
+{% extends 'afro/index.html' %}
+{% load static %}
+<title>{% block title %}Contact{% endblock %}</title>
+<main>
+    {% block content%}
+    <link href="{% static 'afro/css/contact.css' %}" rel="stylesheet">
+    <div class="body">
+        <div class="first row text-info">
+            <div class="bodY-header">
+                <h1 class="text-danger" style="padding: 10px;">Contact Me</h1>
+            </div>
+            <hr>
+        </div>
+        <div class="container-fluid">
+            <div class="body_main">
+                <p>Thank you for your interest in my work as a software developer.
+                <p>
+                    As a member of your team, I promise to bring my passion and expertise to every project, and to work tirelessly to help
+                    your business succeed. I'm confident that my technical skills, problem-solving abilities, and commitment to continuous
+                    learning will make me a valuable addition to your team. I look forward to the opportunity to discuss how I can be a part of Team. 
+                    Please don't hesitate to contact me to learn more about my skills and experience.
+                </p>
+                <p>If you would like to contact me, please use the following options</p>
+
+                <p>
+                    <ul>
+                        <li><a href="https://github.com/Oghie-1">GitHub</a></li>
+                        <li><a href="www.linkedin.com/in/emmanuel-ugbaje ">LinkedIn</a></li>
+                        <li><a href="https://medium.com/@aigbemanuel/">Medium</a></li>
+                        <li><a href="mailto:afrotyche@gmail.com">Email</a></li>
+                    </ul>
+                </p>
+ 
+
+            </div>
+
+            <div class="row-form">
+                <div class="form-container">
+                    <form method="post" class="contact-form" id="contact">
+                        {% csrf_token %}
+                        <label for="name">Name:</label><br>
+                        <input type="text" id="name" name="name"><br>
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" name="email"><br>
+                        <label for="message">Message:</label><br>
+                        <textarea id="message" name="message"></textarea><br>
+                        <input type="submit" value="Submit">
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+   
+</main>
+{% endblock %}

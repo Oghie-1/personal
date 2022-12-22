@@ -1,0 +1,122 @@
+<!-- base.html -->
+{% load static %}
+<!DOCTYPE html>
+
+<html lang="en">
+    
+    <head>
+    
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>{% block title %}AfroNomad |{% endblock %}</title>
+        <link rel="icon" href="{% static 'img/logo.png' %}">
+    
+    
+       
+    
+    
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+            integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+        <!-- CSS Custom File -->
+        <link href="{% static 'afro/css/main.css' %}" rel="stylesheet">
+
+    
+    
+    </head>
+    
+    
+    <body>
+    
+        <div class="flex-container bg-warning">
+    
+            <nav class="navbar navbar-expand-md navbar-dark bg-dark navbar-fixed-top">
+    
+                <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="{% url 'home' %}">Home</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="{% url 'blog' %}">Blog</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'projects' %}">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'about' %}">About</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="{% url 'testimonials' %}">Testimonials</a></li>
+                        <li class="nav-item"><a class="nav-link"href="{% url 'contact' %}">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{% url 'resume' %}">Resume</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            
+
+        
+        </div>
+        <div class="container mt-12">
+
+            <div id="header">
+                <br>
+                {% block header %}{% endblock %}
+            </div>
+            <div id="main">
+                <div class="container mt-4">
+                    {%block content%}
+                    {% endblock content%}
+                </div>
+            </div>
+            <br>
+            <br>
+            
+            <footer>
+                <section class="footer-section">
+                    <div class="row bg-warning">
+                        <div class="container text-center" >
+                            <p class="text-center" style="margin: 15px;">I am cultivating a list of curious tribe members</p>
+                            <p class="text-center">Who are willing to share this new journey with me.</p>
+                            <p class="text-center text-danger"><strong>Join My Tribe</strong></p>
+                            <form method="post" action="{% url 'newsletter' %}" class="newsletter_form">
+                                {% csrf_token %}
+                                {{ form.as_p }}
+                                <input type="submit" value="Subscribe" class="btn-outline-danger">
+                            </form>
+                        </div>
+            
+                    </div>
+                    <br>
+                    <br>
+                    <div class="row bg-info">
+                        <div class="col"></div>
+                        <div class="col"><footer class="py-3 bg-grey">
+                            <p class="m-0 text-dark text-center ">Copyright &copy; AfroNomad</p>
+                        </footer></div>
+                        <div class="col"></div>
+
+                        
+                    </div>
+                
+            
+                </section>
+            </footer>
+
+        </div>
+       
+
+        
+    </body>
+</html>
+        
+
+
+
+
+
+
+
+
+    

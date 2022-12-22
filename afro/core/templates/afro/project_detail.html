@@ -1,0 +1,15 @@
+{% extends 'afro/index.html' %} {% block content %}
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="row card mb-4  mt-3 top">
+            <div class="card-body text-justify">
+                <h2>{{ project.name }}</h2>
+                <p>{{ project.description }}</p>
+                <img src="{{ project.image.url }}" alt="{{ project.name }}" style='width: 400px; height: 250px;border: 1px'>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}

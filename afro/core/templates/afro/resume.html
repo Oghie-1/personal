@@ -1,0 +1,140 @@
+{% extends 'afro/index.html' %}
+{% load static %}
+
+
+<title>{% block title %}Afro|Resume{% endblock %}</title>
+<main>
+    {% block content%}
+    <link rel="stylesheet" type="text/css" href="{% static 'afro/css/resume.css' %}">
+    <div class="body text-justify">
+        <div class="first row text-info">
+            <div class="bodY-header">
+                <h1 class="text-danger" style="padding: 10px;">Resume</h1>
+                <a href="{% static 'afro/uploads/resume.pdf' %}" download>Download Resume</a>
+            </div>
+
+        </div>
+        <br>
+        <div class="row">
+            <div class="container">
+            
+                <h3 class="text-danger">Skills</h3>
+                <ul>
+                    <li>Developed,maintained and deployed web applications using Python, Django and GCP</li>
+                    <li>Adept at proferring well-detailed solutions-driven strategies for identifying growth, market trends and
+                        product
+                        delivery</li>
+                    <li>Familiar with agile development methodologies</li>
+                    <li>Project management</li>
+                    <li>Technical problem-solving</li>
+                    <li>Product Prototype Touchpoint Analysis using Miro</li>
+                </ul>
+            
+            </div>
+            <div class="container">
+                <h3 class="text-danger">Education</h3>
+                <ul>
+                    <li>
+                        <h4 class="text-success">Bachelor's Degree in Animal and Environnmental Biology</h4>
+                        <p>University of Benin</p>
+                        <p>Graduated: August 2016</p>
+                    </li>
+                </ul>
+            </div>
+            <hr>
+            <div class="container">
+                <h3 class="text-danger">Experience</h3>
+                <ul>
+                    <li>
+                        <h4 class="text-success">Product Operations Manager</h4>
+                        <p>OTUGOH AGRO - <small>STARTUP</small></p>
+                        <p>December 2021 - Present</p>
+                        <ul>
+                            <li>Analyzed data to identify trends and opportunities for product optimization</li>
+                            <li>Collaborated with cross-functional teams to define product roadmap and deliver on project timelines</li>
+                            <li>Managed Customer Expectations through developing concise and detailed user stories</li>
+                            <li>Implemented strategies to improve customer satisfaction and retention</li>
+                        </ul>
+                    </li>
+                    <br>
+                    <li>
+                        <h4 class="text-success">Energy Officer</h4>
+                        <p>Bua Cement and Transport</p>
+                        <p>March 2021 - Present</p>
+                        <ul>
+                            <li>Managed a team of six technicians to streamline and optimize the country-wide delivery network</li>
+                            <li>Collaborated with procurement and inventory teams to conduct energy audits and develop detailed action
+                                plans when necessary</li>
+                            <li>Designed and Implemented strategies that increased efficiency by 10% monthly</li>
+                            <li>Implemented "drip-supply" which ensured we were able to mitigate supply-chain issues while working at
+                                full capacity</li>
+                
+                        </ul>
+                    </li>
+                    <br>
+                    
+                    <li>
+                        <h4 class="text-success">Project Director</h4>
+                        <p>Taskira Heritage Media</p>
+                        <p>December 2019 - 2021</p>
+                        <ul>
+                            <li>Developed project plans, budgets, and schedules using agile and waterfall methodologies</li>
+                            <li>Managed stakeholder relationships and communicated project progress and risks to executive leadership
+                            </li>
+                            <li>Coordinated project tasks and resources for cross-functional teams</li>
+                            <li>Directed project planning and risk management</li>
+                            <li>Provided administrative support to managers</li>
+                        </ul>
+                    </li>
+                    <br>
+                    <li>
+                        <h4 class="text-success">Executive Asistant - Political Matters</h4>
+                        <p>Office of the Secretary to The NIGER State Government</p>
+                        <p>December 2016 - 2017</p>
+                        <ul>
+                            <li>Provided high-level administrative support to political executives and advisors</li>
+                            <li>Conducted research and analysis on policy issues and provided recommendations to decision-makers</li>
+                            <li>Managed stakeholder relationships and coordinated meetings, events, and travel for political executives
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </div>
+            <hr>
+            
+            <div class="container">
+                <h3 class="text-danger">Certifications</h3>
+                <ul>
+                    <li>Fundamentals of Digital Marketing from <strong>GOOGLE Digital Garage</strong></li>
+                    <li>Understanding Research Methods from <strong>University of London via Coursera</strong></li>
+                    <li>Professional Scrum with Kanban(PSK 1) from <strong>Udemy</strong></li>
+                    <li>Product Manager Certificate of Completion <strong>EntryLevel</strong> </li>
+                    <li>Inbound Sales from <strong>HubSpot Academy</strong> </li>
+                    <li>Product Led Growth Micro Certification <strong>Product School</strong> </li>
+                    <li>Google IT Automation with Python Professional Certificate <strong>Coursera</strong> </li>
+                    <li>Polygon Africa Bootcamp <strong>Polygon</strong> </li>
+                    <li>Google Africa Developers Scholarship <strong>Andela in partnership with Google and Pluralsight</strong> </li>
+                    
+                </ul>
+
+        
+
+            </div>
+            <div class="container">
+                <h3 class="text-danger">Acomplishment</h3>
+                <ul>
+                    <li>Volunteered as IT support for The Ije Awele Foundation (A Cancer Awareness Organization) - 2021</li>
+                    <li>Volunteered as an agro-extension officer via the N-agro scheme - 2018-2020</li>
+                    <li>Award of Excellence for my role in organizing community-based agricultural programs for secondary
+                        schools via the NYSC-CDS program in Niger State - 2017</li>
+                    <li>Organized free mathematics and physics classes for secondary school students in Minna - 2017</li>
+                    <li>Won the 2009 edition of the school's competition organized by the NAFDAC Consumer Safety Club (junior Category).</li>
+                    <li>Won the 5th edition of the National Reading Competition organized by the Nigerian Breweries Plc</li>
+                </ul>
+            
+            </div>
+        </div>
+    </div>
+    {% endblock %}
+</main>

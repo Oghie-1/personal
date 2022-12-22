@@ -1,0 +1,16 @@
+h2,
+h3,
+h4 {
+    font-family: 'Arial', sans-serif;
+    color: rgb(255, 0, 0);
+}
+
+ul {
+    list-style: none;
+    margin: 1%;
+    padding: 3px;
+}
+
+li {
+    margin-bottom: 20px;
+}
